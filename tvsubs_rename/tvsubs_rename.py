@@ -46,8 +46,8 @@ def run(args):
                     continue
                 if not args.skip_rename:
                     os.rename(oldname, newname)
-                print('{0} -> {0}'.format(os.path.basename(oldname),
-                                        os.path.basename(newname)))
+                print('{oldname} -> {newname}'.format(oldname=os.path.basename(oldname),
+                                                      newname=os.path.basename(newname)))
 
         if not found:
             print("Could not found subs for %s" % videofile)
