@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='tvsubs-rename',
-    version='0.1.0',
+    version='0.1.1',
     description='Script to mass-rename subtitles',
     long_description=readme + '\n\n' + history,
     author='Elias Dorneles',
