@@ -25,7 +25,13 @@ Usage
     tvsubs_rename *.avi
 
 
-This will look for subtitle files for every .avi file in current directory,
-matching episode according to commonly used patterns in filename
-(like ``s01e02`` or ``1x02`` to indicate second episode of season 1) and will
-rename it to match the video filename.
+This will look for subtitle files matching the episode numbers for all the \*.avi
+files in current directory and rename them to match the video filenames.
+
+
+How it works
+------------
+
+It matches episode filenames looking for commonly used patterns in TV-series
+episode files (like ``s01e02`` or ``1x02`` to indicate second episode of season 1)
+and will rename it to match the video filename.
