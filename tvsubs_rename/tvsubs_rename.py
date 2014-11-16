@@ -42,11 +42,11 @@ def run(args):
                 found = True
             if newname:
                 if os.path.exists(newname):
-                    print('{} already exists, skipping...'.format(newname))
+                    print('{0} already exists, skipping...'.format(newname))
                     continue
                 if not args.skip_rename:
                     os.rename(oldname, newname)
-                print('{} -> {}'.format(os.path.basename(oldname),
+                print('{0} -> {0}'.format(os.path.basename(oldname),
                                         os.path.basename(newname)))
 
         if not found:
