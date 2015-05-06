@@ -30,8 +30,8 @@ def get_file_info(filename):
     for pattern in NAME_PATTERNS:
         match = pattern.match(filename)
         if match:
-            return {k: int(v, base=10)
-                    for k, v in match.groupdict().items()}
+            return dict((k, int(v, base=10))
+                        for k, v in match.groupdict().items())
 
 
 def find_all_subs(dirpath):
