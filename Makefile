@@ -44,7 +44,7 @@ coverage:
 	coverage run --source tvsubs_rename setup.py test
 	coverage report -m
 	coverage html
-	open htmlcov/index.html
+	python -m webbrowser htmlcov/index.html
 
 docs:
 	rm -f docs/tvsubs_rename.rst
@@ -52,7 +52,7 @@ docs:
 	sphinx-apidoc -o docs/ tvsubs_rename
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
-	xdg-open docs/_build/html/index.html
+	python -m webbrowser docs/_build/html/index.html
 
 release: clean
 	python setup.py sdist upload
